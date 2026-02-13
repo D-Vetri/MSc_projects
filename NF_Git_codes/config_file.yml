@@ -1,0 +1,25 @@
+
+layers: 21
+segments: 64
+
+condition: 0
+rot: 'uncon16'
+feature_dim: 3
+# D: 3
+lr: 1e-4
+seed: 42
+# phase: 'train'
+
+batch_size: 128
+eval_frequency: 250
+max_iter: 10000
+save_frequency: 1000
+# gpu: 0
+eval: 'sample'
+D: 3
+test_states: '/home/divakar/odf-flow/SO3_NF/model_states/save_point_iteration10000.pth'
+
+train_invert: 50
+viz_evolve: False
+cond_batch_size: 10
+rot_save : False
